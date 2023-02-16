@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+crossorigin="anonymous"> 
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" 
+integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" 
+crossorigin="anonymous"></script> 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" 
+integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" 
+crossorigin="anonymous"></script> 
+
+	<title>Locadora 2000</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg bg-light">
+		<div class="container-fluid">
+			<img style="width: 3%;" src="img/claquete.png">
+			<a class="navbar-brand" href="#topo">Locadora 2000</a>
+	
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#tabFilmes">Filmes Disponíveis</a>
+					</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#drop" id="dropGeneros" role="button" data-bs-toggle="dropdown" aria-expanded="false">Filmes por Categoria</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<li><a class="dropdown-item" href="#gAcao">Ação			</a></li>
+						<li><a class="dropdown-item" href="#gAnim">Animação		</a></li>
+						<li><a class="dropdown-item" href="#gRoman">Romance		</a></li>
+						<li><a class="dropdown-item" href="#gSus">Suspense		</a></li>
+						<li><a class="dropdown-item" href="#gSus">Comédia		</a></li>
+						<li><a class="dropdown-item" href="#gSus">Drama		</a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#cadFilmes">Cadastrar Filme</a>
+				</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<h1 class="display-1 text-center mb-5">Locadora 2000</h1>
+
+	<div class="container">
+		<table class="table table-striped table-hover">
+			<thead>
+				<tr>
+					<th scope="col">Código		</th>
+					<th scope="col">Título		</th>
+					<th scope="col">Diretor		</th>
+					<th scope="col">Lançamento	</th>
+					<th scope="col">Gênero		</th>
+					<th scope="col">Ator/Atriz Principal</th>
+					<th scope="col">Nota IMDb	</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th class="text-center table-primary" colspan="7" id="#gAcao">Ação</th>
+				</tr>
+
+				<tr>
+					<th scope="row">1</th>
+					<td>Guardiões da Galáxia</td>
+					<td>James Gunn</td>
+					<td>31 de julho de 2014</td>
+					<td>Ação</td>
+					<td>Chris Pratt</td>
+					<td>8,0/10</td>
+				</tr>
+
+				<tr>
+					<th scope="row">2</th>
+					<td>Thor: Ragnarok</td>
+					<td>Taika Waititi</td>
+					<td>26 de outubro de 2017</td>
+					<td>Ação</td>
+					<td>Chris Hemsworth</td>
+					<td>7,9/10</td>
+				</tr>
+
+				<tr>
+					<th scope="row">3</th>
+					<td>Príncipe da Pérsia: As Areias do Tempo</td>
+					<td>Mike Newell</td>
+					<td>3 de junho de 2010</td>
+					<td>Ação</td>
+					<td>Jake Gyllenhaal</td>
+					<td>6,6/10</td>
+				</tr>
+
+				<tr>
+					<th class="text-center table-primary" colspan="7" id="#gAnim">Animação</th>
+				</tr>
+
+				<tr>
+			  		<th scope="row">4</th>
+			  		<td>O Estranho Mundo de Jack</td>
+					<td>Henry Selick</td>
+					<td>24 de dezembro de 1993</td>
+					<td>Animação</td>
+					<td>Danny Elfman (voz)</td>
+					<td>7,9/10</td>
+				</tr>
+				
+				<tr>
+					<th scope="row">5</th>
+					<td>Coraline</td>
+					<td>Henry Selick</td>
+					<td>13 de fevereiro de 2009</td>
+					<td>Animação</td>
+					<td>Dakota Fanning (voz)</td>
+					<td>7,7/10</td>
+				</tr>
+				
+				<tr>
+					<th scope="row">6</th>
+					<td>A Viagem de Chihiro</td>
+			    	<td>Hayao Miyazaki</td>
+					<td>18 de julho de 2003</td>
+					<td>Animação</td>
+					<td>Rumi Hiiragi (voz)</td>
+					<td>8,6/10</td>
+				</tr>
+
+				<th class="text-center table-primary" colspan="7" id="#gRoman">Romance</th>
+				</tr>
+
+				<tr>
+			  		<th scope="row">7</th>
+			  		<td>Como Eu Era Antes de Você</td>
+					<td>Thea Sharrock</td>
+					<td>16 de junho de 2016</td>
+					<td>Romance</td>
+					<td>Emilia Clarke</td>
+					<td>7,4/10</td>
+				</tr>
+				
+				<tr>
+					<th scope="row">8</th>
+					<td>Grease: Nos Tempos da Brilhantina</td>
+					<td>Randal Kleiser</td>
+					<td>3 de outubro de 1978</td>
+					<td>Romance</td>
+					<td>John Travolta</td>
+					<td>7,2/10</td>
+				</tr>
+				
+				<tr>
+					<th scope="row">9</th>
+					<td>Dirty Dancing: ritmo quente</td>
+			    	<td>Emile Ardolino</td>
+					<td>25 de setembro de 1987</td>
+					<td>Romance</td>
+					<td>Jennifer Grey, Patrick Swayze</td>
+					<td>7,0/10</td>
+				</tr>
+
+				<th class="text-center table-primary" colspan="7" id="#gRoman">Suspense</th>
+				</tr>
+
+				<tr>
+			  		<th scope="row">10</th>
+			  		<td>Um Lugar Silencioso</td>
+					<td>John Krasinski</td>
+					<td>5 de abril de 2018</td>
+					<td>Suspense</td>
+					<td>Emily Blunt, John Krasinski</td>
+					<td>7,5/10</td>
+				</tr>
+				
+				<tr>
+					<th scope="row">11</th>
+					<td>O Sexto Sentido</td>
+					<td>M. Night Shyamalan</td>
+					<td>22 de outubro de 1999</td>
+					<td>Suspense</td>
+					<td>Bruce Willis</td>
+					<td>8,2/10</td>
+				</tr>
+				
+				<tr>
+					<th scope="row">12</th>
+					<td>Pulp Fiction: Tempo de Violência</td>
+			    	<td>Quentin Tarantino</td>
+					<td>18 de fevereiro de 1995</td>
+					<td>Romance</td>
+					<td>John Travolta</td>
+					<td>8,9/10</td>
+				</tr>
+
+				<th class="text-center table-primary" colspan="7" id="#gRoman">Comédia</th>
+				</tr>
+
+				<tr>
+			  		<th scope="row">13</th>
+			  		<td>Os Fantasmas se Divertem</td>
+					<td>Tim Burton</td>
+					<td>16 de junho de 1988</td>
+					<td>Comédia</td>
+					<td>Michael Keaton</td>
+					<td>7,5/10</td>
+				</tr>
+				
+				<tr>
+					<th scope="row">14</th>
+					<td>As Branquelas</td>
+					<td>Keenen Ivory Wayans</td>
+					<td>27 de agosto de 2004</td>
+					<td>Comédia</td>
+					<td>Marlon Wayans</td>
+					<td>5,7/10</td>
+				</tr>
+				
+				<tr>
+					<th scope="row">15</th>
+					<td>Os Caça-Fantasmas</td>
+					<td>Ivan Reitman</td>
+					<td>20 de dezembro de 1984</td>
+					<td>Comédia</td>
+					<td>Bill Murray</td>
+					<td>7,8/10</td>
+				</tr>
+
+				<th class="text-center table-primary" colspan="7" id="#gRoman">Drama</th>
+				</tr>
+
+				<tr>
+			  		<th scope="row">16</th>
+			  		<td>O Lar das Crianças Peculiares</td>
+					<td>Tim Burton</td>
+					<td>29 de setembro de 2016</td>
+					<td>Drama</td>
+					<td>Eva Green</td>
+					<td>6,7/10</td>
+				</tr>
+				
+				<tr>
+					<th scope="row">17</th>
+					<td>Parasita</td>
+					<td>Bong Joon Ho</td>
+					<td>7 de novembro de 2019</td>
+					<td>Drama</td>
+					<td>Song Kang-ho</td>
+					<td>8,5/10</td>
+				</tr>
+				
+				<tr>
+					<th scope="row">18</th>
+					<td>Era Uma Vez Em... Hollywood</td>
+			    	<td>Quentin Tarantino</td>
+					<td>15 de agosto de 2019</td>
+					<td>Drama</td>
+					<td>Leonardo DiCaprio</td>
+					<td>7,6/10</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="m-5">
+		<hr class="border-primary border-3 opacity-75">
+	</div>
+
+	<h2 class="text-center mb-5">Cadastro de Filmes</h2>
+
+	<!-- cadastro de Filmes -->
+	<div class="container mb-5">
+		<form>
+			<!-- linha código e data lançamento -->
+			<div class="row">
+				<!-- coluna código -->
+				<div class="mb-3 col">
+					<label for="codFilme" class="form-label" >Código:</label>
+					<input type="text" class="form-control" id="CodFilme" placeholder="00">
+				</div>
+				<!-- coluna data -->
+				<div class="mb-3 col">
+					<label for="anoFilme" class="form-label">Ano:</label>
+					<input type="date" class="form-control" id="anoFilme" placeholder="DD de MM de AAAA">
+				</div>
+			</div>
+
+			<!-- linha titulo e diretor -->
+			<div class="row">
+				<!-- coluna título -->
+				<div class="mb-3 col">
+					<label for="titFilme" class="form-label">Título:</label>
+					<input type="text" class="form-control" id="titFilme">
+				</div>
+				<!-- coluna diretor -->
+				<div class="mb-3 col">
+					<label for="DirFilme" class="form-label">Diretor:</label>
+					<input type="text" class="form-control" id="DirFilme">
+			</div>
+
+				<!-- ator/atriz principal e nota imdb -->
+			<div class="row">
+				<!-- coluna ator/atriz principal -->
+				<div class="mb-3 col">
+					<label for="AtorAtrizFilme" class="form-label">Ator/Atriz Principal:</label>
+					<input type="text" class="form-control" id="AtorAtrizFilme">
+				</div>
+				<!-- nota imdb -->
+				<div class="mb-3 col">
+					<label for="NotaFilme" class="form-label">Nota IMDb:</label>
+					<input type="number" class="form-control" id="NotaFilme">
+				</div>
+				
+			</div>
+
+			<!-- linha gêneros -->
+			<div class="row">
+
+				<div class="mb-3 col form-check">
+					<input type="radio" id="radGenAcao" name="radio" class="form-check-input" value="acao">
+					<label for="radGenAcao" class="form-label">Ação</label>
+				</div>
+
+				<div class="mb-3 col form-check">
+					<input type="radio" id="radGenAnim" name="radio" class="form-check-input" value="anim">
+					<label for="radGenAnim" class="form-label">Animação</label>
+				</div>
+
+				<div class="mb-3 col form-check">
+					<input type="radio" id="radGenRoman" name="radio" class="form-check-input" value="roman">
+					<label for="radGenRoman" class="form-label">Romance</label>
+				</div>
+
+				<div class="mb-3 col form-check">
+					<input type="radio" id="radGenSus" name="radio" class="form-check-input" value="sus">
+					<label for="radGenSus" class="form-label">Suspense</label>
+				</div>
+				
+				<div class="mb-3 col form-check">
+					<input type="radio" id="radGenCom" name="radio" class="form-check-input" value="com">
+					<label for="radGenCom" class="form-label">Comédia</label>
+				</div>
+
+				<div class="mb-3 col form-check">
+					<input type="radio" id="radGenDrama" name="radio" class="form-check-input" value="drama">
+					<label for="radGenDrama" class="form-label">Drama</label>
+				</div>
+			</div>
+
+			<!-- botão enviar -->
+			<div class="col-auto">
+				<button type="submit" class="btn btn-primary mb-3">Cadastrar</button>
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>
